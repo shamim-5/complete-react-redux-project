@@ -1,9 +1,10 @@
 import './App.css';
+import Index from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Complete-React-Redux-Project-Client</h1>
+    <div>
+      <Index />
     </div>
   );
 }
