@@ -24,7 +24,7 @@ const AddBook = () => {
       <form onSubmit={handleSubmit}>
         <div className="form-field">
           <label htmlFor="title">Title</label>
-          <input type="text" id="title" name="title" value={title} onChange={(e) => setTitle(e.target.value)} />
+          <input type="text" id="title" name="title" value={title} onChange={(e) => setTitle(e.target.value)} required/>
         </div>
         <div className="form-field">
           <label htmlFor="author">Author</label>
