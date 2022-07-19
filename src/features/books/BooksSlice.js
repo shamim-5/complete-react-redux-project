@@ -1,10 +1,12 @@
 const { createSlice } = require("@reduxjs/toolkit");
 
+const { v4: uuidv4 } = require("uuid");
+
 const initialBooks = {
   books: [
-    { id: 1, title: "Bangladesh && History", author: "Anisul Islam" },
-    { id: 2, title: "Bangladesh", author: "Anisul Islam" },
-    { id: 3, title: "History", author: "Anisul Islam" },
+    { id: uuidv4(), title: "Bangladesh && History", author: "Anisul Islam" },
+    { id: uuidv4(), title: "Bangladesh", author: "Anisul Islam" },
+    { id: uuidv4(), title: "History", author: "Anisul Islam" },
   ],
 };
 
